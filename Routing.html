@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/content.css" rel="stylesheet">
+
+    <title>How The Internet Works</title>
+</head>
+<body style="background-color:antiquewhite;">
+<header class=".bg-dark">
+    <!-- Content here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="About.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        How The Internet Works
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Domain%20Names.html">Domain Names</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="ICANN.html">ICANN</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="IP%20Address.html">IP Address</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Packets.html">Packets</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Routing.html">Routing</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="DNS.html">DNS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="HTTP%20and%20HTTPS%20Protocols.html">HTTP and HTTPS protocols</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="W3C.html">W3C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="HTML.html">HTML</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="CSS.html">CSS</a>
+                    </div>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <h1 class="text-center"><b>ROUTING</b></h1>
+    <hr>
+    <img src="routing.png" class="d-block w-100" alt="...">
+
+    <p class="text-justify">IP routing is a process of transferring data from one network to another as IP packets. By default, hosts of different networks cannot communicate with each other. If two hosts located in different IP networks want to communicate with each other, they use IP routing.
+
+        Routers provide IP routing. A router is a specialized device that connects different IP networks. Let’s take a simple example. Suppose two IP hosts; 10.10.10.10/8 and 20.20.20.20/8 want to communicate. Since they both belong to the different IP networks, they need a router to communicate. The following image shows this example.</p>
+
+    </p>
+
+    <br><p class="text-justify"><b>Example of Routing:</b></p>
+    <p class="text-justify">Routers examine the destination IP address and make their routing decisions accordingly. To determine out which interface the packet will be forwarded, routers use routing tables which list all networks for which routes are known. Consider the following example:</p>
+    <img src="routing example.png" class="d-block w-100" alt="...">
+    <p class="text-justify">In the example above we have a simple network of two computers and a router. Host A wants to communicate with Host B. Because hosts are on different subnets, Host A sends its packet to the default gateway (the router). The router receives the packet, examines the destination IP address, and looks up into its routing table to figure out which interface the packet will be sent. It then sends the packet to Host B.</p>
+
+    <br>
+    <p class="text-justify"><b>TYPES OF ROUTING</b><br></p>
+    <p class="text-justify"><b>1.Static routing – </b>Static routing is a process in which we have to manually add routes in routing table. 
+    </p>
+    <p class="text-justify"><b>2.Default Routing – </b>This is the method where the router is configured to send all packets towards a single router (next hop). It doesn’t matter to which network the packet belongs, it is forwarded out to router which is configured for default routing. It is generally used with stub routers. A stub router is a router which has only one route to reach all other networks.  
+    <p class="text-justify"><b>3.Dynamic Routing – </b>Dynamic routing makes automatic adjustment of the routes according to the current state of the route in the routing table. Dynamic routing uses protocols to discover network destinations and the routes to reach it. RIP and OSPF are the best examples of dynamic routing protocol. Automatic adjustment will be made to reach the network destination if one route goes down. 
+
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="col-xs-50 col-md-15">
+            <h5>BELOW ARE THESE LINKS FOR MORE INFORMATION!</h5><br>
+            <a href= About.html>About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Domain%20Names.html>Domain Names</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= ICANN.html>ICANN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= IP%20Address.html>IP Address</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Packets.html>Packets</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Routing.html>Routing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= DNS.html>DNS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= HTTP%20and%20HTTPS%20Protocols.html>HTTP & HTTPS PROTOCOL</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= W3C.html>W3C</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= HTML.html>HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= CSS.html>CSS</a>
+        </div>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
